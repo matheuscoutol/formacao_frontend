@@ -1,0 +1,137 @@
+* {
+	border: 0px;
+	border-radius: 0.5rem;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: Lato;
+	margin: 0;
+	padding: 0;
+}
+body {
+	align-items: center;
+	background-color: #0f032b;
+	display: flex;
+	justify-content: center;
+	min-height: 80vh;
+}
+.main-container {
+	background-color: #27164e;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	min-height: 450px;
+	min-width: 380px;
+	padding: 1.5rem;
+	text-align: center;
+}
+
+#valid {
+	font-size: 0.8rem;
+	color: #f44236;
+	opacity: 0;
+}
+
+/* Form Container */
+#form-container {
+	display: flex;
+	flex-direction: column;
+}
+#form-container h2 {
+	margin-bottom: 1.5rem;
+}
+.info-inputs {
+	margin-bottom: 1rem;
+}
+.input-control {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.7rem;
+}
+.input-control label {
+	text-align: left;
+}
+.input-control input {
+	color: #333;
+	margin: 0.5rem 0;
+	padding: 1rem 1rem;
+}
+.actions-inputs {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+.actions-inputs button {
+	flex: 1;
+	font-weight: bold;
+	padding: 1rem 1rem;
+	text-transform: uppercase;
+}
+button {
+	opacity: 0.9;
+}
+button:hover {
+	opacity: 1;
+}
+#calc-btn {
+	background-color: #f44236;
+	cursor: pointer;
+}
+#clear-btn {
+	background-color: #6f36f4;
+	cursor: pointer;
+}
+#result-container {
+	display: none;
+	flex-direction: column;
+	justify-content: center;
+}
+#back-btn {
+	background-color: #6f36f4;
+	font-weight: bold;
+	margin: 1rem auto;
+	padding: 1rem 1rem;
+	text-transform: uppercase;
+	width: 50%;
+}
+
+/* Result Container */
+#imc-number {
+	font-size: 2rem;
+	margin-bottom: 0.6rem;
+}
+#imc-info {
+	font-size: 1.2rem;
+	color: #ccc;
+}
+
+#result-container h3 {
+	margin-top: 1rem;
+	color: #dfdfdf;
+}
+
+#imc-table {
+	margin: 1.5rem 0;
+	font-size: 0.8rem;
+}
+
+#table-header {
+	font-weight: bold;
+	color: #ccc;
+}
+
+#table-header,
+.table-data {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.3rem 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#table-header h4,
+.table-data p {
+	flex: 1;
+}
+#table-header h4:nth-child(3),
+.table-data p:nth-child(3) {
+	max-width: 25%;
+}

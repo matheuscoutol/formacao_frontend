@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/styles.css" />
+		<link href="https://fonts.cdnfonts.com/css/facebook-sans" rel="stylesheet" />
+		<script
+			src="https://kit.fontawesome.com/d59ea0e91d.js"
+			crossorigin="anonymous"></script>
+		<script src="js/scripts.js" defer></script>
+		<title>Box Shadow</title>
+	</head>
+	<body>
+		<header>
+			<h1><i class="fa-solid fa-code"></i>&nbsp;&nbsp;Gerador de Box-shadow CSS</h1>
+		</header>
+		<main>
+			<div id="main-container">
+				<div id="controls-container">
+					<h2 class="section-title">Configurações:</h2>
+					<div class="form-control">
+						<div class="range-input">
+							<label for="horizontal">Deslocamento Horizontal</label>
+							<input
+								type="range"
+								name="horizontal"
+								id="horizontal"
+								min="-60"
+								max="60"
+								value="5" />
+						</div>
+						<div class="reference-input">
+							<input
+								type="text"
+								id="horizontal-value"
+								name="horizontal-value"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+							<p>px</p>
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="range-input">
+							<label for="vertical">Deslocamento Vertical</label>
+							<input
+								type="range"
+								name="vertical"
+								id="vertical"
+								min="-60"
+								max="60"
+								value="5" />
+						</div>
+						<div class="reference-input">
+							<input
+								type="text"
+								id="vertical-value"
+								name="vertical-value"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+							<p>px</p>
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="range-input">
+							<label for="blur">Intensidade do Borrão (Blur)</label>
+							<input
+								type="range"
+								name="blur"
+								id="blur"
+								min="0"
+								max="100"
+								value="10" />
+						</div>
+						<div class="reference-input">
+							<input
+								type="text"
+								id="blur-value"
+								name="blur-value"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+							<p>px</p>
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="range-input">
+							<label for="spread"
+								>Intensidade do Espalhamento (Spread)</label
+							>
+							<input
+								type="range"
+								F
+								name="spread"
+								id="spread"
+								min="-40"
+								max="40"
+								value="3" />
+						</div>
+						<div class="reference-input">
+							<input
+								type="text"
+								id="spread-value"
+								name="spread-value"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+							<p>px</p>
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="range-input">
+							<label for="opacity">Opacidade</label>
+							<input
+								type="range"
+								F
+								name="opacity"
+								id="opacity"
+								min="0"
+								max="1"
+								value="1"
+								step="0.01" />
+						</div>
+						<div class="reference-input">
+							<input
+								type="text"
+								id="opacity-value"
+								name="opacity-value"
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" />
+							<p>px</p>
+						</div>
+					</div>
+					<div class="form-control">
+						<div class="color-input">
+							<label for="shadow-color">Cor da Sombra</label>
+							<input
+								type="color"
+								name="shadow-color"
+								id="shadow-color"
+								value="#000000" />
+
+							<input
+								type="text"
+								name="shadow-color-value"
+								id="shadow-color-value"
+								class="color-value"
+								value="#000000" />
+						</div>
+					</div>
+					<div class="form-control">
+						<div id="inset-input">
+							<label for="inset">Sombra Interna? (Inset)</label>
+							<input type="checkbox" name="inset" id="inset" />
+						</div>
+					</div>
+				</div>
+				<div id="preview-container">
+					<h2 class="section-title">Pré visualização:</h2>
+					<div id="preview-options">
+						<div class="preview-control">
+							<p>Cor de Fundo:</p>
+							<div class="color-input">
+								<input
+									type="color"
+									name="bg-color"
+									id="bg-color"
+									value="#eeeeee" />
+							</div>
+							<input
+								type="text"
+								id="bg-color-value"
+								class="color-value" />
+						</div>
+						<div class="preview-control">
+							<p>Cor da caixa:</p>
+							<div class="color-input">
+								<input
+									type="color"
+									name="box-color"
+									id="box-color"
+									value="#677953" />
+							</div>
+							<input
+								type="text"
+								id="box-color-value"
+								class="color-value" />
+						</div>
+					</div>
+					<div id="bg-box"><div id="box"></div></div>
+				</div>
+			</div>
+			<div id="rule-container">
+				<h2 class="section-title">Código CSS:</h2>
+				<div id="rules-area">
+					<div id="rules">
+						<p id="rule">box-shadow: <span></span>;</p>
+						<p id="webkit-rule">-webkit-box-shadow: <span></span>;</p>
+						<p id="moz-rule">-moz-box-shadow: <span></span>;</p>
+					</div>
+					<button id="copy-btn">
+						<i class="fa-regular fa-copy"></i> Copiar
+					</button>
+				</div>
+				<p id="obs">
+					A regra <b>box-shadow</b> pode não ser suportada por alguns
+					navegadores. Confira sobre a regra e sua compatibilidade
+					<a
+						href="https://www.w3schools.com/cssref/css3_pr_box-shadow.php"
+						target="_blank"
+						>clicando aqui.</a
+					>
+				</p>
+			</div>
+		</main>
+		<footer>
+			<p>
+				Desenvolvido por
+				<a href="https://github.com/matheuscoutol" target="_blank">Matheus Couto</a>
+				- como projeto do curso Formação Front End
+				<a href="https://horadecodar.com.br" target="_blank">Hora de Codar</a> -
+				2023
+			</p>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,97 @@
+* {
+	font-family: Helvetica;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: linear-gradient(180deg, #b16096 0%, #6f60b1 90%);
+	color: #eee;
+	min-height: 100vh;
+	padding: 2rem;
+	text-align: center;
+}
+
+#title {
+	margin-bottom: 2rem;
+}
+
+#multiplication-form {
+	align-items: center;
+	background-color: #eee;
+	border-radius: 1rem;
+	color: #333;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1rem auto;
+	max-width: 300px;
+	padding: 1rem;
+}
+
+.form-control {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+	width: 100px;
+}
+
+.form-control label {
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin-bottom: 0.6rem;
+}
+
+.form-control input {
+	border: 1px solid #ccc;
+	border-radius: 0.5rem;
+	flex: 1;
+	margin-bottom: 1rem;
+	padding: 0.6rem 0.4rem;
+}
+
+#multiplication-form input[type="submit"] {
+	background-color: #333;
+	border: 1px solid #aaa;
+	border-radius: 0.5rem;
+	color: #eee;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 0.6rem 1.2rem;
+	text-transform: uppercase;
+	width: 200px;
+}
+
+#multiplication-table {
+	margin-top: 2.5rem;
+}
+
+#result-table {
+	align-items: center;
+	background-color: #333;
+	border: 3px solid #ccc;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto;
+	max-width: 300px;
+	padding: 1rem 1rem;
+}
+
+#result-table .row {
+	border-bottom: 1px solid #ccc;
+	display: flex;
+	font-size: 1.2rem;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0.5rem;
+	width: 150px;
+}
+
+#result-table #result-table {
+	padding: 1rem;
+}
+
+#result-table .row:last-child {
+	border-bottom: none;
+}

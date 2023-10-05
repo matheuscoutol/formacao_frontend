@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lista de Tarefas</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<!-- Font Awesome (icons)-->
+		<script
+			src="https://kit.fontawesome.com/d59ea0e91d.js"
+			crossorigin="anonymous"></script>
+		<script src="js/scripts.js" defer></script>
+		<!-- Font: -->
+		<link href="https://fonts.cdnfonts.com/css/facebook-sans" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="main-container">
+			<header>
+				<h1>Lista de Tarefas</h1>
+			</header>
+			<div id="addtask-container">
+				<h3>Adicione sua tarefa:</h3>
+				<form id="addtask-form">
+					<input
+						type="text"
+						id="addtask-input"
+						placeholder="O que você vai fazer?" />
+					<button type="submit" id="addtask-btn">
+						<i class="fa-solid fa-plus"></i>
+					</button>
+				</form>
+			</div>
+			<div id="toolbar-container">
+				<div id="search-container">
+					<h3>Pesquisar:</h3>
+					<form id="search-form" class="form-control">
+						<input type="text" id="search-input" placeholder="Buscar" />
+						<button type="submit" id="erase-btn">
+							<i class="fa-solid fa-delete-left"></i>
+						</button>
+					</form>
+				</div>
+				<div id="filter-container">
+					<h3>Filtrar:</h3>
+					<select name="filter-select" id="filter-select">
+						<option value="all">Todos</option>
+						<option value="done">Feitos</option>
+						<option value="to-do">A Fazer</option>
+					</select>
+				</div>
+			</div>
+			<div id="task-list"></div>
+			<!-- <div class="task-container">
+				<div class="task">
+					<p>Estudar Javascript</p>
+				</div>
+				<div class="task-options">
+					<button class="done-btn">
+						<i class="fa-solid fa-check"></i>
+					</button>
+					<button class="edit-btn">
+						<i class="fa-solid fa-pen"></i>
+					</button>
+					<button class="delete-btn">
+						<i class="fa-solid fa-trash"></i>
+					</button>
+				</div>
+			</div> -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

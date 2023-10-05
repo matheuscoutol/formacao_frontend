@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculadora de IMC</title>
+		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato" />
+		<script type="module" src="js/scripts.js" defer></script>
+		<script type="module" src="js/imc.js"></script>
+	</head>
+
+	<body>
+		<main>
+			<div class="main-container">
+				<div id="form-container">
+					<h2>Calculadora de IMC:</h2>
+					<form id="imc-form">
+						<div class="info-inputs">
+							<div class="input-control">
+								<label for="heigth">Altura (cm):</label>
+								<input
+									type="text"
+									name="height"
+									id="height"
+									placeholder="Ex: 170" />
+							</div>
+							<div class="input-control">
+								<label for="weigth">Peso (kg):</label>
+								<input
+									type="text"
+									name="weight"
+									id="weight"
+									placeholder="Ex: 70" />
+							</div>
+							<p id="valid">Números inválidos. Digite novamente.</p>
+						</div>
+
+						<div class="actions-inputs">
+							<button id="calc-btn">Calcular</button>
+							<button id="clear-btn">Limpar</button>
+						</div>
+					</form>
+				</div>
+				<div id="result-container">
+					<p id="imc-number">Seu IMC: <span></span></p>
+					<p id="imc-info">Situação atual: <span></span></p>
+					<h3>Confira as classificações:</h3>
+					<div id="imc-table">
+						<div id="table-header">
+							<h4>IMC</h4>
+							<h4>Clasificação</h4>
+							<h4>Obesidade</h4>
+						</div>
+					</div>
+					<button id="back-btn">Voltar</button>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

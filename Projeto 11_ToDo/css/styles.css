@@ -1,0 +1,98 @@
+* {
+	font-family: "Facebook Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+body {
+	align-items: center;
+	background-color: #1c1c2c;
+	color: #333;
+	display: flex;
+	justify-content: center;
+	margin: 5rem auto;
+}
+button,
+input,
+select {
+	padding: 0.5rem;
+}
+button {
+	background-color: #3e6060;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.4s;
+}
+button:hover {
+	background-color: #2e4747;
+}
+button i {
+	pointer-events: none;
+}
+#main-container {
+	background-color: #e7e7ef;
+	border-radius: 1rem;
+	max-width: 350px;
+	padding: 1rem;
+}
+#main-container h1 {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+#addtask-container,
+#toolbar-container {
+	border-bottom: 2px solid #3e6060;
+	padding: 1rem;
+}
+#addtask-form {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: space-between;
+}
+#addtask-input {
+	width: 100%;
+}
+#toolbar-container {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+}
+#search-form {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: space-between;
+}
+#search-input {
+	width: 90%;
+}
+.task-container {
+	align-items: center;
+	border-bottom: 1px solid #3e6060;
+	display: flex;
+	gap: 2rem;
+	justify-content: space-between;
+	padding: 1rem 0.5rem;
+	transition: 0.3s;
+}
+.task-container p {
+	font-weight: 700;
+	word-break: break-word;
+}
+
+.task-options,
+.edit-form {
+	display: flex;
+	gap: 0.5rem;
+}
+.done {
+	background-color: #3e6060;
+	color: #fff;
+}
+.done button {
+	background-color: #2e4747;
+	color: #fff;
+}
+.done p {
+	text-decoration: line-through;
+	font-style: italic;
+}
