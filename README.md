@@ -1,4 +1,4 @@
-#Formação Front End
+# Formação Front End
 ### /formacao_frontend
 Olá! Aqui estão alguns dos projetos desenvolvidos durante o curso Formação Front End da comunidade Hora de Codar.
 Os projetos tiveram o intuito de praticar fundamentos de HTML, CSS, Javascript e React.
